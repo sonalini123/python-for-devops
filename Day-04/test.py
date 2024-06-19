@@ -9,7 +9,7 @@ def sub(num1,num2):
 
 num1 = float(sys.argv[1])
 operation = sys.argv[2]
-num2 = sys.argv[3]
+num2 = float(sys.argv[3])
 
 if operation =="addition":
   output = addition(num1,num2)
