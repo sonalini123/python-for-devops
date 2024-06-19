@@ -1,5 +1,5 @@
 import sys
-def addition(num1,num2):
+def add(num1,num2):
   x = num1+num2
   return x
 
@@ -11,7 +11,7 @@ num1 = float(sys.argv[1])
 operation = sys.argv[2]
 num2 = float(sys.argv[3])
 
-if operation =="addition":
+if operation =="add":
   output = addition(num1,num2)
   print(output)
 
