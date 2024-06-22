@@ -48,3 +48,8 @@ my_tuple = tuple(my_list)
 print(my_tuple)
 """
 # 9 Create a tuple containing an integer, a string, and a list. Access and print each element.
+
+my_tuple = (1,"home",[2,3,4])
+print(my_tuple[0])
+print(my_tuple[1])
+print(my_tuple[2])
