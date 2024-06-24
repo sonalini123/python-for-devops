@@ -35,5 +35,6 @@ log_file = [
    "ERROR: Database connection failed",
 ]
 for i in log_file:
-    if i == "ERROR":
-    print("i")    
+        # Check if the line starts with "ERROR"
+        if i.startswith("ERROR"):
+            print(i, end='')  # Print the line if it starts with "ERROR"
