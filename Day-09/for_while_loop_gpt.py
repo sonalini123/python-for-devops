@@ -36,5 +36,5 @@ log_file = [
 ]
 for i in log_file:
         # Check if the line starts with "ERROR"
-        if i.startswith("ERROR"):
-            print(i, end='')  # Print the line if it starts with "ERROR"
+  if i.startswith("ERROR"):
+       print(i)  # Print the line if it starts with "ERROR"
