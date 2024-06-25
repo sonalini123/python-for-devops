@@ -7,7 +7,7 @@ print(number)
 number = input("provide any number: ")
 print(number)
 """
- 
+# program to print the list of files in a folder  
 import os
 folder_names = input("provide folder names: ").split()
 for i in folder_names:
