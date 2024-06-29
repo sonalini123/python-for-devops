@@ -26,5 +26,5 @@ for _ in range(n):
   student_marks.append([name, marks])
   sorted_student_marks = sorted(student_marks, key=lambda x: x[1], reverse=True)
   lowest_marks_student = sorted_student_marks[-1]
-  print(student_marks[0])
+  print(lowest_marks_student[0])
   
