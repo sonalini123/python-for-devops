@@ -29,3 +29,13 @@ difference_EngFrn = Eng_sub.difference(Frn_sub)
 
 print("no of students subscribed for Eng newspaper: ", (len(difference_EngFrn)))
 #print("Difference (set_Frn - set_Eng) using - operator:", difference_FrnEng_operator)
+
+#You are given two sets of student roll numbers. One set has subscribed to the English newspaper, and one set has subscribed to the French newspaper. Your task is to find the total number of students who have subscribed to either the English or the French newspaper but not both.
+Eng_sub = int(input("enter the number of students subscribed to English newspaper: "))
+Eng_sub_roll_nos = set(map(int,input().split()))
+
+Frn_sub = int(input("enter the number of students subscribed to Frn newspaper: "))
+Frn_sub_roll_nos = set(map(int,input().split()))
+
+symm_diff = Eng_sub_roll_nos ^ Frn_sub_roll_nos
+print(len(symm_diff))
