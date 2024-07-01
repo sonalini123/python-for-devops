@@ -39,3 +39,25 @@ Frn_sub_roll_nos = set(map(int,input().split()))
 
 symm_diff = Eng_sub_roll_nos ^ Frn_sub_roll_nos
 print(len(symm_diff))
+
+
+#You are given a set A  and N number of other sets. These N number of sets have to perform some specific mutation operations on set A.
+
+#Your task is to execute those operations and print the sum of elements from set A.
+N = int(input("enter the number of elements you want to have: "))
+A = set(list(map(int,input().split())))
+no_of_operations = int(input("enter the number of operations you want to perform: "))
+for _ in range(no_of_operations):
+    operation, No_of_elements_in_B = input().split()
+    B = set(list(map(int,input().split())))
+    if operation == 'intersection_update':
+        A.intersection_update(B)
+    elif operation == 'update':
+        A.update(B)
+    elif operation == 'symmetric_difference_update':
+        A.symmetric_difference_update(B)
+    elif operation == 'difference_update':
+        A.difference_update(B) 
+    A = list(A)      
+    total = sum(A)
+    print(total)    
