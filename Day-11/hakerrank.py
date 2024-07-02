@@ -60,4 +60,28 @@ for _ in range(no_of_operations):
         A.difference_update(B) 
     A = list(A)      
     total = sum(A)
-    print(total)    
+    print(total)   
+    
+#The tourists consist of:
+#→ A Captain.
+#→ An unknown group of families consisting of  members per group where  ≠ .
+
+#The Captain was given a separate room, and the rest were given one room per group.
+
+#Mr. Anant has an unordered list of randomly arranged room entries. The list consists of the room numbers for all of the tourists. The room numbers will appear  times per group except for the Captain's room.
+
+#Mr. Anant needs you to help him find the Captain's room number.
+#The total number of tourists or the total number of groups of families is not known to you.
+#You only know the value of  and the room number list.
+
+#Input Format
+
+#The first line consists of an integer, , the size of each group.
+#The second line contains the unordered elements of the room number list.
+room_number_list = list(map(int,input().split()))
+count = Counter(room_number_list)
+for key in count.keys():
+  if count[key] == 1:
+   print(key)
+
+
