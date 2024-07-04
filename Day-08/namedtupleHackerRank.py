@@ -10,6 +10,7 @@ for i in range(N):
     Class = int(input())
 student = Student(ID,Marks,Name,Class)
 students.append(student)
-for Marks in (students[]):
-    average = sum(Marks)/len(Marks)
-    print(average)
+total_marks = sum(student.Marks for student in students)
+average = (total_marks)/N
+print(f"average is {average}")
+
